@@ -8,7 +8,7 @@ jobs:
     strategy:
       max-parallel: 1
       matrix: 
-        node: ['sample','sample','sample','sample','sample','sample','sample','sample','sample','sample']
+        node: ['sample']
       fail-fast: false 
     
     steps:
@@ -18,8 +18,7 @@ jobs:
             owner: NamrataJha
             repo: 'sample'
             package-name: ${{ matrix.node }}
-            min-versions-to-keep: 50
-            delete-only-pre-release-versions: true
+            min-versions-to-keep: 0
 
 
  
