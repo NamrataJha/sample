@@ -8,17 +8,17 @@ jobs:
     strategy:
       max-parallel: 1
       matrix: 
-        node: ['sample','sample','sample','sample','sample','sample','sample','sample','sample','sample']
+        node: ['sample']
       fail-fast: false 
     
     steps:
       - name: Delete package
-        uses: actions/delete-package-versions@7d188d17769c82061f17b759934daecb19d2500e
+        uses: actions/delete-package-versions@df897cea272b553cf22aca453b00f2a4efdebaab
         with: 
             owner: NamrataJha
             repo: 'sample'
             package-name: ${{ matrix.node }}
-            min-versions-to-keep: 600
+            min-versions-to-keep: 100
 
 
  
