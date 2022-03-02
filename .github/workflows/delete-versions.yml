@@ -13,7 +13,7 @@ jobs:
     
     steps:
       - name: Delete package
-        uses: actions/delete-package-versions@v2
+        uses: actions/delete-package-versions@v3
         with: 
             owner: NamrataJha
             repo: 'sample'
